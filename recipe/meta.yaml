@@ -11,8 +11,8 @@ source:
   sha256: ff6c9077633fc62a491d6997c43b094d885bb45a7ca1f36c9a0d647c54b74b14
 
 build:
-  number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  number: 1
+  script: pip install . --no-deps --no-build-isolation --ignore-installed --no-cache-dir -vv
   skip: True  # [win]
   detect_binary_files_with_prefix: False
 
